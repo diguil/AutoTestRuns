@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObject xmlns="http://soap.sforce.com/2006/04/metadata">
+    <customSettingsType>List</customSettingsType>
+    <description>Contains various settings, parameters used by the Automated Testing jobs</description>
+    <enableFeeds>false</enableFeeds>
+    <fields>
+        <fullName>Frequency__c</fullName>
+        <description>Used to execute the automated testing each workday or calendar day.  A weekly or monthly schedule can be initiated via the Salesforce Apex Job Scheduler</description>
+        <encrypted>false</encrypted>
+        <externalId>false</externalId>
+        <inlineHelpText>Used to execute the automated testing each workday or calendar day.  A weekly or monthly schedule can be initiated via the Salesforce Apex Job Scheduler.  Valid values are &apos;Work Day&apos;, &apos;Every Day&apos;.  Only the value in initial custom setting record applies.</inlineHelpText>
+        <label>Frequency</label>
+        <length>10</length>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>History_Days__c</fullName>
+        <defaultValue>30</defaultValue>
+        <externalId>false</externalId>
+        <inlineHelpText>Number of days to keep records in the Automated Testing Queue custom object.  Default is 30 days.  Only the value in the initial custom setting record is applicable.</inlineHelpText>
+        <label>History Days</label>
+        <precision>3</precision>
+        <required>false</required>
+        <scale>0</scale>
+        <trackTrending>false</trackTrending>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Include_Installed_Package_Tests__c</fullName>
+        <defaultValue>false</defaultValue>
+        <externalId>false</externalId>
+        <inlineHelpText>When checked, the automated test job will include test classes associated with installed packages</inlineHelpText>
+        <label>Include Installed Package Tests</label>
+        <trackTrending>false</trackTrending>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>Notification_Email__c</fullName>
+        <encrypted>false</encrypted>
+        <externalId>false</externalId>
+        <inlineHelpText>Multiple records can exist if there are multiple recipients for failure emails</inlineHelpText>
+        <label>Notification Email</label>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Email</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Wait_Time_for_Checker__c</fullName>
+        <defaultValue>2</defaultValue>
+        <externalId>false</externalId>
+        <inlineHelpText>Enter the number of hours to wait before the Automated Test Checker executes.  Defaults to 2 hours.</inlineHelpText>
+        <label>Wait Time for Checker</label>
+        <precision>2</precision>
+        <required>false</required>
+        <scale>0</scale>
+        <trackTrending>false</trackTrending>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <label>AutomatedTestingParameters</label>
+    <visibility>Public</visibility>
+</CustomObject>

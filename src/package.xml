@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<Package xmlns="http://soap.sforce.com/2006/04/metadata">
+    <types>
+        <members>AutomatedTstChecker</members>
+        <members>AutomatedTstJobQueuer</members>
+        <members>AutomatedTstTest</members>
+        <name>ApexClass</name>
+    </types>
+    <types>
+        <members>AutomatedTestingQueue__c-AutomatedTestingQueue Layout</members>
+        <name>Layout</name>
+    </types>
+    <types>
+        <members>AutomatedTestingParameters__c</members>
+        <members>AutomatedTestingQueue__c</members>
+        <name>CustomObject</name>
+    </types>
+    <types>
+        <members>AutomatedTestingQueue__c</members>
+        <name>CustomTab</name>
+    </types>
+    <types>
+        <members>AutomatedTesting</members>
+        <name>PermissionSet</name>
+    </types>
+    <version>38.0</version>
+</Package>
